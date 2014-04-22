@@ -1,7 +1,3 @@
-project (CORE_OculusVR)
-
-cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
-
 include_directories(Include Src Src/Kernel Src/Util)
 
 set(SOURCE_FILES
@@ -145,4 +141,3 @@ install (TARGETS OculusVR DESTINATION ${CMAKE_INSTALL_PREFIX}/lib COMPONENT shli
 
 install(FILES ${MAIN_HEADER_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/)
 install(FILES ${HEADER_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/ovr)
-
