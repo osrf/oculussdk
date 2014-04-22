@@ -1,33 +1,33 @@
-include_directories(Include Src Src/Kernel Src/Util)
+include_directories(Include ovr ovr/Kernel ovr/Util)
 
 set(SOURCE_FILES
-    Src/Kernel/OVR_Alg.cpp
-    Src/Kernel/OVR_Allocator.cpp
-    Src/Kernel/OVR_Atomic.cpp
-    Src/Kernel/OVR_File.cpp
-    Src/Kernel/OVR_FileFILE.cpp
-    Src/Kernel/OVR_Log.cpp
-    Src/Kernel/OVR_Math.cpp
-    Src/Kernel/OVR_RefCount.cpp
-    Src/Kernel/OVR_Std.cpp
-    Src/Kernel/OVR_String.cpp
-    Src/Kernel/OVR_String_FormatUtil.cpp
-    Src/Kernel/OVR_String_PathUtil.cpp
-    Src/Kernel/OVR_SysFile.cpp
-    Src/Kernel/OVR_System.cpp
-    Src/Kernel/OVR_Timer.cpp
-    Src/Kernel/OVR_UTF8Util.cpp
-    Src/OVR_DeviceHandle.cpp
-    Src/OVR_DeviceImpl.cpp
-    Src/OVR_JSON.cpp
-    Src/OVR_LatencyTestImpl.cpp
-    Src/OVR_Profile.cpp
-    Src/OVR_SensorFilter.cpp
-    Src/OVR_SensorFusion.cpp
-    Src/OVR_SensorImpl.cpp
-    Src/OVR_ThreadCommandQueue.cpp
-    Src/Util/Util_LatencyTest.cpp
-    Src/Util/Util_Render_Stereo.cpp
+    ovr/Kernel/OVR_Alg.cpp
+    ovr/Kernel/OVR_Allocator.cpp
+    ovr/Kernel/OVR_Atomic.cpp
+    ovr/Kernel/OVR_File.cpp
+    ovr/Kernel/OVR_FileFILE.cpp
+    ovr/Kernel/OVR_Log.cpp
+    ovr/Kernel/OVR_Math.cpp
+    ovr/Kernel/OVR_RefCount.cpp
+    ovr/Kernel/OVR_Std.cpp
+    ovr/Kernel/OVR_String.cpp
+    ovr/Kernel/OVR_String_FormatUtil.cpp
+    ovr/Kernel/OVR_String_PathUtil.cpp
+    ovr/Kernel/OVR_SysFile.cpp
+    ovr/Kernel/OVR_System.cpp
+    ovr/Kernel/OVR_Timer.cpp
+    ovr/Kernel/OVR_UTF8Util.cpp
+    ovr/OVR_DeviceHandle.cpp
+    ovr/OVR_DeviceImpl.cpp
+    ovr/OVR_JSON.cpp
+    ovr/OVR_LatencyTestImpl.cpp
+    ovr/OVR_Profile.cpp
+    ovr/OVR_SensorFilter.cpp
+    ovr/OVR_SensorFusion.cpp
+    ovr/OVR_SensorImpl.cpp
+    ovr/OVR_ThreadCommandQueue.cpp
+    ovr/Util/Util_LatencyTest.cpp
+    ovr/Util/Util_Render_Stereo.cpp
 )
 
 set(MAIN_HEADER_FILES
@@ -36,87 +36,87 @@ set(MAIN_HEADER_FILES
 )
 
 set(HEADER_FILES
-    Src/Kernel/OVR_Alg.h
-    Src/Kernel/OVR_Allocator.h
-    Src/Kernel/OVR_Array.h
-    Src/Kernel/OVR_Atomic.h
-    Src/Kernel/OVR_Color.h
-    Src/Kernel/OVR_ContainerAllocator.h
-    Src/Kernel/OVR_File.h
-    Src/Kernel/OVR_Hash.h
-    Src/Kernel/OVR_KeyCodes.h
-    Src/Kernel/OVR_List.h
-    Src/Kernel/OVR_Log.h
-    Src/Kernel/OVR_Math.h
-    Src/Kernel/OVR_RefCount.h
-    Src/Kernel/OVR_Std.h
-    Src/Kernel/OVR_String.h
-    Src/Kernel/OVR_SysFile.h
-    Src/Kernel/OVR_System.h
-    Src/Kernel/OVR_Timer.h
-    Src/Kernel/OVR_Threads.h
-    Src/Kernel/OVR_Types.h
-    Src/Kernel/OVR_UTF8Util.h
-    Src/OVR_Device.h
-    Src/OVR_DeviceConstants.h
-    Src/OVR_DeviceHandle.h
-    Src/OVR_DeviceImpl.h
-    Src/OVR_DeviceMessages.h
-    Src/OVR_HIDDevice.h
-    Src/OVR_HIDDeviceBase.h
-    Src/OVR_HIDDeviceImpl.h
-    Src/OVR_JSON.h
-    Src/OVR_LatencyTestImpl.h
-    Src/OVR_Profile.h
-    Src/OVR_SensorFilter.h
-    Src/OVR_SensorFusion.h
-    Src/OVR_SensorImpl.h
-    Src/OVR_ThreadCommandQueue.h
-    Src/Util/Util_LatencyTest.h
-    Src/Util/Util_Render_Stereo.h
+    ovr/Kernel/OVR_Alg.h
+    ovr/Kernel/OVR_Allocator.h
+    ovr/Kernel/OVR_Array.h
+    ovr/Kernel/OVR_Atomic.h
+    ovr/Kernel/OVR_Color.h
+    ovr/Kernel/OVR_ContainerAllocator.h
+    ovr/Kernel/OVR_File.h
+    ovr/Kernel/OVR_Hash.h
+    ovr/Kernel/OVR_KeyCodes.h
+    ovr/Kernel/OVR_List.h
+    ovr/Kernel/OVR_Log.h
+    ovr/Kernel/OVR_Math.h
+    ovr/Kernel/OVR_RefCount.h
+    ovr/Kernel/OVR_Std.h
+    ovr/Kernel/OVR_String.h
+    ovr/Kernel/OVR_SysFile.h
+    ovr/Kernel/OVR_System.h
+    ovr/Kernel/OVR_Timer.h
+    ovr/Kernel/OVR_Threads.h
+    ovr/Kernel/OVR_Types.h
+    ovr/Kernel/OVR_UTF8Util.h
+    ovr/OVR_Device.h
+    ovr/OVR_DeviceConstants.h
+    ovr/OVR_DeviceHandle.h
+    ovr/OVR_DeviceImpl.h
+    ovr/OVR_DeviceMessages.h
+    ovr/OVR_HIDDevice.h
+    ovr/OVR_HIDDeviceBase.h
+    ovr/OVR_HIDDeviceImpl.h
+    ovr/OVR_JSON.h
+    ovr/OVR_LatencyTestImpl.h
+    ovr/OVR_Profile.h
+    ovr/OVR_SensorFilter.h
+    ovr/OVR_SensorFusion.h
+    ovr/OVR_SensorImpl.h
+    ovr/OVR_ThreadCommandQueue.h
+    ovr/Util/Util_LatencyTest.h
+    ovr/Util/Util_Render_Stereo.h
 )
 
 if(WIN32)
     list(APPEND SOURCE_FILES
-        Src/Kernel/OVR_ThreadsWinAPI.cpp
-        Src/OVR_Win32_DeviceManager.cpp
-        Src/OVR_Win32_DeviceStatus.cpp
-        Src/OVR_Win32_HIDDevice.cpp
-        Src/OVR_Win32_HMDDevice.cpp
-        Src/OVR_Win32_SensorDevice.cpp
+        ovr/Kernel/OVR_ThreadsWinAPI.cpp
+        ovr/OVR_Win32_DeviceManager.cpp
+        ovr/OVR_Win32_DeviceStatus.cpp
+        ovr/OVR_Win32_HIDDevice.cpp
+        ovr/OVR_Win32_HMDDevice.cpp
+        ovr/OVR_Win32_SensorDevice.cpp
     )
     list(APPEND HEADER_FILES
-        Src/OVR_Win32_DeviceManager.h
-        Src/OVR_Win32_DeviceStatus.h
-        Src/OVR_Win32_HIDDevice.h
-        Src/OVR_Win32_HMDDevice.h
-        Src/OVR_Win32_SensorDevice.h
+        ovr/OVR_Win32_DeviceManager.h
+        ovr/OVR_Win32_DeviceStatus.h
+        ovr/OVR_Win32_HIDDevice.h
+        ovr/OVR_Win32_HMDDevice.h
+        ovr/OVR_Win32_SensorDevice.h
     )
 elseif(APPLE)
     list(APPEND SOURCE_FILES
-        Src/Kernel/OVR_ThreadsPthread.cpp
-        Src/OVR_OSX_DeviceManager.cpp
-        Src/OVR_OSX_HIDDevice.cpp
-        Src/OVR_OSX_HMDDevice.cpp
-        Src/OVR_OSX_SensorDevice.cpp
+        ovr/Kernel/OVR_ThreadsPthread.cpp
+        ovr/OVR_OSX_DeviceManager.cpp
+        ovr/OVR_OSX_HIDDevice.cpp
+        ovr/OVR_OSX_HMDDevice.cpp
+        ovr/OVR_OSX_SensorDevice.cpp
     )
     list(APPEND HEADER_FILES
-        Src/OVR_OSX_DeviceManager.h
-        Src/OVR_OSX_HIDDevice.h
-        Src/OVR_OSX_HMDDevice.h
+        ovr/OVR_OSX_DeviceManager.h
+        ovr/OVR_OSX_HIDDevice.h
+        ovr/OVR_OSX_HMDDevice.h
     )
 else()
     list(APPEND SOURCE_FILES
-        Src/Kernel/OVR_ThreadsPthread.cpp
-        Src/OVR_Linux_DeviceManager.cpp
-        Src/OVR_Linux_HIDDevice.cpp
-        Src/OVR_Linux_HMDDevice.cpp
-        Src/OVR_Linux_SensorDevice.cpp
+        ovr/Kernel/OVR_ThreadsPthread.cpp
+        ovr/OVR_Linux_DeviceManager.cpp
+        ovr/OVR_Linux_HIDDevice.cpp
+        ovr/OVR_Linux_HMDDevice.cpp
+        ovr/OVR_Linux_SensorDevice.cpp
     )
     list(APPEND HEADER_FILES
-        Src/OVR_Linux_DeviceManager.h
-        Src/OVR_Linux_HIDDevice.h
-        Src/OVR_Linux_HMDDevice.h
+        ovr/OVR_Linux_DeviceManager.h
+        ovr/OVR_Linux_HIDDevice.h
+        ovr/OVR_Linux_HMDDevice.h
     )
     list(APPEND EXTRA_LIBS
         EDID
@@ -140,7 +140,8 @@ target_link_libraries(OculusVR ${OculusVR_EXTRA_LIBS})
 install (TARGETS OculusVR DESTINATION ${CMAKE_INSTALL_PREFIX}/lib COMPONENT shlib)
 
 install(FILES ${MAIN_HEADER_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/)
-install(FILES ${HEADER_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/ovr)
+install(DIRECTORY ovr DESTINATION ${CMAKE_INSTALL_PREFIX}/include FILES_MATCHING PATTERN "*.h")
+
 
 ########################################
 # Make the package config files
