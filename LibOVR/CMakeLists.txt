@@ -141,3 +141,12 @@ install (TARGETS OculusVR DESTINATION ${CMAKE_INSTALL_PREFIX}/lib COMPONENT shli
 
 install(FILES ${MAIN_HEADER_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/)
 install(FILES ${HEADER_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/ovr)
+
+########################################
+# Make the package config files
+configure_file(
+${CMAKE_SOURCE_DIR}/cmake/pkgconfig/OculusVR.in
+${CMAKE_CURRENT_BINARY_DIR}/cmake/pkgconfig/OculusVR.pc @ONLY)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/cmake/pkgconfig/OculusVR.pc
+DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/pkgconfig
+COMPONENT pkgconfig)
