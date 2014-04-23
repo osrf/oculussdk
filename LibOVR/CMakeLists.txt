@@ -133,7 +133,7 @@ else()
     SET(OculusVR_EXTRA_LIBS pthread udev X11 Xinerama)
 endif()
 
-add_library(OculusVR STATIC ${SOURCE_FILES} ${HEADER_FILES})
+add_library(OculusVR SHARED ${SOURCE_FILES} ${HEADER_FILES})
 target_link_libraries(OculusVR ${OculusVR_EXTRA_LIBS})
 
 #set_target_properties(OculusVR PROPERTIES SOVERSION ${OCULUS_MAJOR_VERSION} VERSION ${OCULUS_VERSION_FULL})
