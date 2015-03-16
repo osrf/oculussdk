@@ -4,7 +4,7 @@ includedir=${prefix}/include
 
 Name: OculusVR
 Description: A package of Oculus SDK
-Version: 0.2.5
+Version: 0.4.4
 Requires:
-Libs: -L${libdir} -lOculusVR
+Libs: -L${libdir} -lovr
 CFlags: -I${includedir}
