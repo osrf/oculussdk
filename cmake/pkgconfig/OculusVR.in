@@ -6,5 +6,5 @@ Name: OculusVR
 Description: A package of Oculus SDK
 Version: 0.4.4
 Requires:
-Libs: -L${libdir} -lovr
+Libs: -L${libdir} -lovr -lXrandr
 CFlags: -I${includedir}
